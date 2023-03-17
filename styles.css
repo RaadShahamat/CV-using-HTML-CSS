@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+
+}
+.container .top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.container .top .imgbox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgbox .box{
+    position: relative;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    
+}
+.container .top .imgbox .box img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    object-fit: cover;
+}
+.container .top .profileText{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: top;
+}
+.container .top .profileText h3{
+     font-size: 3rem;
+     letter-spacing: .1rem;
+     line-height: 1.2rem;
+     font-weight: 600;
+     color: #333;
+
+}
+.container .top .profileText h3 span{
+    position: relative;
+    font-size: 1.50rem;
+    font-weight: 400;
+    top: 20px;
+    letter-spacing: 1rem;
+}
+
+
+.container .contentBox{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+
+.container .contentBox h3{
+    border-left: 4px solid #ff8bb3;
+    padding-left: 10px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.3rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.container .contentBox ul{
+    position: relative;
+    margin: 10px 0;
+    
+}
+.container .contentBox ul li{
+    list-style: none;
+    cursor: pointer;
+    line-height: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+    
+}
+
+.container .contentBox .education li{
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+h5{
+    color: #3590d2;
+}
+
+h4{
+    color: #333;
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+h6{
+    color: #666;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.language li{
+    flex-direction: column;
+}
+.language li span{
+    color:#333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.language .percent{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+
+
+.rightBox{
+    padding-left: 40px;
+}
+p{
+    font-weight: 300;
+    color:#666;
+    
+}
+.rightBox .Projects .percent{
+    
+        position: relative;
+        width: 90%;
+        height: 6px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: block;
+        overflow: hidden;
+        background: #8512b3;
+   
+    
+}
+.rightBox .Projects .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f0821b;
+    
+}
+.rightBox .Projects .text{
+    padding-right: 40px;
+    margin-bottom: 25px;
+    
+}
+.rightBox .Projects h4{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.rightBox .about-skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.rightBox .about-skills .box h4{
+    color:#333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.rightBox .about-skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+}
+.rightBox .about-skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+
+.Social-media div{
+    margin-top: 8px;
+    color:#333;
+    cursor: pointer;
+}
+.Social-media a{
+    color: #333;
+}
